@@ -6,27 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BC5083B02E0238CE00494CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5083A32E0238CE00494CB8 /* AppDelegate.swift */; };
+		BC5083B32E0238CE00494CB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5083AC2E0238CE00494CB8 /* SceneDelegate.swift */; };
+		BC5083B62E0238CE00494CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5083A42E0238CE00494CB8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BC5083562E02326E00494CB8 /* Coordinators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinators.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC5083A32E0238CE00494CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC5083A42E0238CE00494CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC5083A62E0238CE00494CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5083AC2E0238CE00494CB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BC5083682E02326F00494CB8 /* Exceptions for "Coordinators" folder in "Coordinators" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = BC5083552E02326E00494CB8 /* Coordinators */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BC5083582E02326E00494CB8 /* Coordinators */ = {
+		BC5083BA2E0238E000494CB8 /* Coordinators */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				BC5083682E02326F00494CB8 /* Exceptions for "Coordinators" folder in "Coordinators" target */,
-			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		BC5083BB2E0238FA00494CB8 /* Storyboards */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BC5083BC2E02391300494CB8 /* View Controllers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +52,7 @@
 		BC50834D2E02326E00494CB8 = {
 			isa = PBXGroup;
 			children = (
-				BC5083582E02326E00494CB8 /* Coordinators */,
+				BC5083AF2E0238CE00494CB8 /* Coordinators */,
 				BC5083572E02326E00494CB8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +63,20 @@
 				BC5083562E02326E00494CB8 /* Coordinators.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BC5083AF2E0238CE00494CB8 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BC5083A32E0238CE00494CB8 /* AppDelegate.swift */,
+				BC5083AC2E0238CE00494CB8 /* SceneDelegate.swift */,
+				BC5083BB2E0238FA00494CB8 /* Storyboards */,
+				BC5083BA2E0238E000494CB8 /* Coordinators */,
+				BC5083A42E0238CE00494CB8 /* Assets.xcassets */,
+				BC5083A62E0238CE00494CB8 /* Info.plist */,
+				BC5083BC2E02391300494CB8 /* View Controllers */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,7 +95,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BC5083582E02326E00494CB8 /* Coordinators */,
+				BC5083BA2E0238E000494CB8 /* Coordinators */,
+				BC5083BB2E0238FA00494CB8 /* Storyboards */,
+				BC5083BC2E02391300494CB8 /* View Controllers */,
 			);
 			name = Coordinators;
 			packageProductDependencies = (
@@ -122,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5083B62E0238CE00494CB8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5083B02E0238CE00494CB8 /* AppDelegate.swift in Sources */,
+				BC5083B32E0238CE00494CB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +175,7 @@
 				INFOPLIST_FILE = Coordinators/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -176,7 +202,7 @@
 				INFOPLIST_FILE = Coordinators/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
